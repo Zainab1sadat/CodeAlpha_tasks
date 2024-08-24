@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <style>
+        .container {
+            height: 17cm;
+            background-image: linear-gradient( #41B3A2,#BDE8CA);
+        }
+        button:hover{
+            filter: drop-shadow(0 0 10px #fffdef);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container p-5 text-light mx-auto">
+        <h1 class="text-center">Age Calculator</h1>
+
+        <label for="birthdate" class="my-4">Enter your birthdate:</label>
+        <input type="date" class="form-control" id="birthdate">
+        <button class="btn btn-outline-light my-4" onclick="calculateAge()">Calculate Age</button>
+
+        <p id="result" class="text-center display-5"></p>
+
+        <script src="script.js"></script>
+    </div>
+</body>
+
+</html>
